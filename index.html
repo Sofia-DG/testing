@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WSMS – Resultados de Testing</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1e3a5f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.4rem; }
+    header p  { font-size: 1rem; opacity: 0.8; }
+
+    .subtitle {
+      background: #2a4a7f;
+      color: #a8c4e0;
+      text-align: center;
+      padding: 0.6rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .intro {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid #1e3a5f;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #4a5568;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .suite-list { display: flex; flex-direction: column; gap: 0.75rem; }
+
+    .suite {
+      background: white;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #e2e8f0;
+      transition: box-shadow 0.15s;
+    }
+    .suite:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    .suite-info { display: flex; align-items: center; gap: 1rem; }
+
+    .badge {
+      background: #edf2f7;
+      color: #4a5568;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
+      min-width: 2.2rem;
+      text-align: center;
+    }
+
+    .suite-name { font-weight: 600; font-size: 0.95rem; }
+    .suite-desc { font-size: 0.82rem; color: #718096; margin-top: 0.2rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.45rem 1.1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-available {
+      background: #1e3a5f;
+      color: white;
+    }
+    .btn-available:hover { background: #2a4a7f; }
+
+    .btn-pending {
+      background: #edf2f7;
+      color: #a0aec0;
+      cursor: default;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WSMS – Work Shift Management System</h1>
+  <p>Resultados de Testing de Software · SI4</p>
+</header>
+<div class="subtitle">DI GILIO MARÍA SOFÍA</div>
+
+<main>
+  <div class="intro">
+    Este sitio contiene los reportes de pruebas end-to-end automatizadas del sistema WSMS,
+    organizados por módulo. Cada reporte incluye los casos de prueba ejecutados, su resultado,
+    capturas de pantalla y videos de los pasos realizados.
+  </div>
+
+  <h2>Módulos probados</h2>
+
+  <div class="suite-list">
+
+    <div class="suite">
+      <div class="suite-info">
+        <span class="badge">01</span>
+        <div>
+          <div class="suite-name">Autenticación</div>
+          <div class="suite-desc">Inicio de sesión por rol: inspector, supervisor, jefe</div>
+        </div>
+      </div>
+      <span class="btn btn-pending">Próximamente</span>
+    </div>
+
+    <div class="suite">
+      <div class="suite-info">
+        <span class="badge">02</span>
+        <div>
+          <div class="suite-name">Ofertas de Turno</div>
+          <div class="suite-desc">Publicación y visualización de ofertas de cobertura e intercambio</div>
+        </div>
+      </div>
+      <span class="btn btn-pending">Próximamente</span>
+    </div>
+
+    <div class="suite">
+      <div class="suite-info">
+        <span class="badge">03</span>
+        <div>
+          <div class="suite-name">Autorizaciones</div>
+          <div class="suite-desc">Aprobación y rechazo de cambios de turno por el jefe</div>
+        </div>
+      </div>
+      <span class="btn btn-pending">Próximamente</span>
+    </div>
+
+    <div class="suite">
+      <div class="suite-info">
+        <span class="badge">04</span>
+        <div>
+          <div class="suite-name">Flujos Completos</div>
+          <div class="suite-desc">Flujo end-to-end de cobertura e intercambio entre inspectores</div>
+        </div>
+      </div>
+      <span class="btn btn-pending">Próximamente</span>
+    </div>
+
+    <div class="suite">
+      <div class="suite-info">
+        <span class="badge">05</span>
+        <div>
+          <div class="suite-name">Registro de Empleados</div>
+          <div class="suite-desc">Alta de empleados, validaciones de formulario y bugs documentados</div>
+        </div>
+      </div>
+      <a href="05-personal/" class="btn btn-available">Ver reporte →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Generado con Playwright · WSMS Testing Suite · 2026
+</footer>
+
+</body>
+</html>
