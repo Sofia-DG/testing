@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MundoDigital — Reportes de Testing</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f4f8;
+      color: #2d3748;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 44px 24px 36px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    /* ── Author bar ── */
+    .author-bar {
+      background: #2a4a7f;
+      color: #a8c4e0;
+      text-align: center;
+      padding: 9px 24px;
+      font-size: 0.85rem;
+    }
+
+    /* ── Content wrapper ── */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    /* ── Intro block ── */
+    .intro {
+      background: white;
+      border-left: 4px solid #1e3a5f;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 36px;
+      font-size: 0.93rem;
+      line-height: 1.65;
+      color: #4a5568;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      margin-bottom: 14px;
+    }
+
+    /* ── Suite card ── */
+    .suite {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .suite-name {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #1a202c;
+      margin-bottom: 3px;
+    }
+
+    .suite-desc {
+      font-size: 0.85rem;
+      color: #718096;
+      line-height: 1.4;
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      display: inline-block;
+      transition: background 0.15s;
+    }
+
+    .btn-available {
+      background: #1e3a5f;
+      color: white;
+    }
+    .btn-available:hover {
+      background: #2a4a7f;
+    }
+
+    .btn-pending {
+      background: #edf2f7;
+      color: #a0aec0;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: #a0aec0;
+      font-size: 0.8rem;
+      padding: 0 24px 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MundoDigital</h1>
+    <p>Reportes de Testing Automatizado — Playwright</p>
+  </header>
+
+  <div class="author-bar">
+    Di Gilio María Sofía &nbsp;·&nbsp; Marketing y Fidelización G4
+  </div>
+
+  <div class="content">
+
+    <div class="intro">
+      Este sitio reúne los reportes de testing automatizado generados con
+      <strong>Playwright</strong> para el sistema <strong>MundoDigital</strong>.
+      Cada módulo cuenta con su propia suite de pruebas que cubre los flujos
+      principales y alternativos de la aplicación. Hacé clic en
+      <em>Ver reporte</em> para acceder al detalle de ejecución de cada suite.
+    </div>
+
+    <div class="section-label">Suites de prueba</div>
+
+    <div class="suite">
+      <div>
+        <div class="suite-name">Promociones</div>
+        <div class="suite-desc">Registro, consulta, modificación, eliminación y listado de promociones comerciales</div>
+      </div>
+      <a href="promociones/" class="btn btn-available">Ver reporte →</a>
+    </div>
+
+    <div class="suite">
+      <div>
+        <div class="suite-name">Cupones</div>
+        <div class="suite-desc">Registro, consulta, modificación, anulación y listado de cupones de descuento</div>
+      </div>
+      <a href="cupones/" class="btn btn-available">Ver reporte →</a>
+    </div>
+
+    <div class="suite">
+      <div>
+        <div class="suite-name">Puntos</div>
+        <div class="suite-desc">Registro de puntos por compra y consulta de saldo de fidelización por cliente</div>
+      </div>
+      <a href="puntos/" class="btn btn-available">Ver reporte →</a>
+    </div>
+
+    <div class="suite">
+      <div>
+        <div class="suite-name">Bugs</div>
+        <div class="suite-desc">Regresión de bugs reportados: cálculo de puntos, detalle de cupón y campo descripción opcional</div>
+      </div>
+      <a href="bugs/" class="btn btn-available">Ver reporte →</a>
+    </div>
+
+  </div>
+
+  <footer>
+    MundoDigital S.A. &nbsp;·&nbsp; Marketing y Fidelización G4 &nbsp;·&nbsp; Generado con Playwright
+  </footer>
+
+</body>
+</html>
